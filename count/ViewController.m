@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -23,5 +25,27 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction)pulas{
+    
+    a++;
+    label.text=[NSString stringWithFormat:@"%d",a];
+    
+}
+
+
+
+
+-(IBAction)mainasu{
+    a--;
+    label.text=[NSString stringWithFormat:@"%d",a];
+    
+}
+
+-(IBAction)cler{
+    a=0;
+    label.text=[NSString stringWithFormat:@"%d",a];
+}
+
 
 @end
